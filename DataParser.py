@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from utils import label_files_with_names, normalize_rgb
+from utils import label_files_with_names,normalize_rgb
 
 class DataParser():
 
@@ -17,7 +17,7 @@ class DataParser():
 
         self.batch_size = batch_size
         self.steps_per_epoch = len(self.training_ids)/batch_size
-        self.validation_steps = len(self.validation_ids)/batch_size
+        self.validation_steps = len(self.validation_ids)/(batch_size*2)
         self.image_size = image_size
     
     def get_batch(self, batch):

@@ -17,6 +17,6 @@ def predict_cat_dog(model,test_dir = "test1/", number=1 ,image_size=256):
             result = "CAT"
         else:
             result=  "DOG"
-        print(prediction)
+        print(result)
     else:
         print("Image is None")
