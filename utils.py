@@ -17,8 +17,6 @@ def label_files_with_names(train_path):
         result=0
         if "cat" in file_name:
             result=1
-        elif "dog" not in file_name:
-            continue
         file_names.append((os.path.join(train_path,file_name), result))
     return file_names
 

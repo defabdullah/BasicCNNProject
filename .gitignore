@@ -1,4 +1,4 @@
-*
+*.pyc
 az.json
 !.gitattributes
 !.gitignore
